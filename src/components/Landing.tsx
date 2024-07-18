@@ -5,7 +5,7 @@ const Landing = () => {
     return (
         <div className="select-none">
             <div className="w-full flex justify-center">
-                <img className="w-[184px] mb-10" src="/logo-white.png"></img>
+                <img className="w-[184px] mb-[100px]" src="/logo-white.png"></img>
             </div>
             <div className="w-[330px] h-[440px] relative flex flex-col">
                 <motion.img
@@ -55,14 +55,13 @@ const Landing = () => {
                     delay: 3,
                     type: "spring",
                 }}
-                className="flex flex-col text-xl text-center"
+                className="flex flex-col text-xl text-center mb-7"
             >
-                <div className="text-white">
-                    대화 <span className="font-bold ">감정분석 AI 서비스</span>
-                </div>
-                <div className="text-white">
-                    <span className="font-bold">감정을 나무에 기록</span>하세요!
-                </div>
+                <p className="text-white font-extralight">
+                    대화 <span className="font-medium ">감정분석 AI 서비스</span>
+                    <br />
+                    <span className="font-medium">감정을 나무에 기록</span>하세요!
+                </p>
             </motion.div>
         </div>
     );
